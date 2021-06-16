@@ -1,0 +1,127 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  color: #999;
+  font: normal normal 12px/100% "Roboto";
+}
+
+.email_link {
+  color: #999;
+  height: 16px;
+  margin-bottom: 9px;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.email_link:hover {
+  cursor: pointer;
+  color: #356eff;
+}
+
+.phone_link {
+  color: #999;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 16px;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.phone_link:hover {
+  cursor: pointer;
+  color: #356eff;
+}
+
+.email_link:before {
+  content: "";
+  background: url(./img/email_icon.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 0;
+  left: 0;
+}
+
+.email_link:hover::before {
+  content: "";
+  background: url(./img/email_icon_active.svg) no-repeat;
+  background-size: cover;
+}
+
+.phone_link:before {
+  content: "";
+  background: url(./img/telegram_icon.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 0;
+  left: 0;
+}
+
+.phone_link:hover::before {
+  content: "";
+  background: url(./img/telegram_icon_active.svg) no-repeat;
+  background-size: cover;
+}
+
+.social_networks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.github {
+  background: url(./img/github_icon.svg) no-repeat;
+  background-size: cover;
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.vkontakte {
+  background: url(./img/vk_icon.svg) no-repeat;
+  background-size: cover;
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.instagram {
+  background: url(./img/instagram_icon.svg) no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+
+.github:hover {
+  background: url(./img/github_icon_active.svg) no-repeat;
+  background-size: cover;
+}
+
+.vkontakte:hover {
+  background: url(./img/vk_icon_active.svg) no-repeat;
+  background-size: cover;
+}
+
+.instagram:hover {
+  background: url(./img/instagram_icon_active.svg) no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  .email_link,
+  .phone_link {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .email_link,
+  .phone_link {
+    margin-bottom: 5px;
+  }
+}

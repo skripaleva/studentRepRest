@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+body {
+  background: #f7f7f7;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 700px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.school_link {
+  position: absolute;
+  left: 0;
+}
+
+.school_logo {
+  background: url(./img/WHS-logo.svg) no-repeat;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  left: 4px;
+}
+
+.school_logo:hover,
+.school_link:hover {
+  cursor: pointer;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  margin-bottom: 24px;
+}
+
+.button {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal bold 16px/19px "Roboto";
+  text-decoration: none;
+  outline: none;
+  height: 44px;
+  width: 128px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.active {
+  color: #fff;
+  background: #356eff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+  .wrap {
+    max-width: 650px;
+    min-width: 370px;
+    max-height: 600px;
+    margin: auto;
+  }
+
+  .menu_list {
+    margin-bottom: 15px;
+  }
+
+  .button {
+    margin-bottom: 0;
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  .wrap {
+    max-width: 400px;
+    min-width: 321px;
+    max-height: 600px;
+    margin: auto;
+  }
+
+  .menu_list {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font: normal bold 14px/19px "Roboto";
+    margin-bottom: 0;
+    height: 40px;
+    width: 90px;
+  }
+
+  .school_logo {
+    background-size: contain;
+    height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrap {
+    width: 310px;
+    max-height: 480px;
+    margin: auto;
+  }
+
+  .menu_list {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font: normal bold 14px/19px "Roboto";
+    margin-bottom: 0;
+    height: 30px;
+    width: 70px;
+  }
+
+  .school_logo {
+    background-size: contain;
+    height: 25px;
+  }
+}

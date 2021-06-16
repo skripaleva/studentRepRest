@@ -1,0 +1,81 @@
+.item_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 432px;
+  overflow: auto;
+}
+
+.empty_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.no_deals_picture {
+  background: url(./img/error_picture.png) no-repeat;
+  margin-bottom: 24px;
+  height: 164px;
+  width: 267px;
+}
+
+.no_deals_message {
+  margin: 0 0 8px 0;
+  font: normal normal 18px/21px "Roboto";
+}
+
+.do_it_message {
+  color: #999;
+  margin: 0;
+  font: normal normal 14px/16px "Roboto";
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+  .item_list {
+    max-height: 300px;
+    padding-left: 20px;
+  }
+
+  .empty_list {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  .item_list {
+    max-height: 300px;
+    padding-left: 0px;
+  }
+
+  .empty_list {
+    margin-top: 30px;
+  }
+
+  .no_deals_message {
+    font: normal normal 15px/21px "Roboto";
+  }
+}
+
+@media (max-width: 320px) {
+  .item_list {
+    max-height: 200px;
+    padding-left: 0px;
+  }
+
+  .empty_list {
+    margin-top: 0;
+  }
+
+  .no_deals_picture {
+    background-size: contain;
+    height: 130px;
+    width: 233px;
+  }
+
+  .no_deals_message {
+    font: normal normal 15px/21px "Roboto";
+    text-align: center;
+  }
+}

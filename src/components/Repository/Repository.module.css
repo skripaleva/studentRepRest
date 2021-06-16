@@ -1,0 +1,150 @@
+.repo_name_wrap {
+  margin-bottom: 4px;
+}
+
+.repo_name_link {
+  color: #000;
+  height: 30px;
+  font: normal 500 14px/16px "Roboto";
+  text-decoration: none;
+}
+
+.repo_name_link:hover {
+  color: #356eff;
+}
+
+.info_about_repo {
+  display: flex;
+  color: #999;
+  font: normal normal 12px/14px "Roboto";
+}
+
+.language,
+.star,
+.forks,
+.date {
+  margin-right: 16px;
+  position: relative;
+}
+
+.language {
+  padding-left: 20px;
+  width: 78px;
+}
+
+.star,
+.forks {
+  text-align: right;
+  width: 28px;
+}
+
+.star:before,
+.forks:before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.star:before {
+  background: url(./img/star_icon.png) no-repeat;
+}
+
+.forks:before {
+  background: url(./img/forks_icon.png) no-repeat;
+}
+
+.html_circle:before,
+.css_circle:before,
+.js_circle:before {
+  content: "";
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.html_circle:before {
+  background: #e34c26;
+}
+
+.css_circle:before {
+  background: #563d7c;
+}
+
+.js_circle:before {
+  background: #f1e05a;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .date {
+    margin-right: 0px;
+  }
+
+  .language,
+  .star,
+  .forks {
+    margin-right: 8px;
+  }
+
+  .language {
+    padding-left: 0;
+    width: 62px;
+  }
+
+  .html_circle:before,
+  .css_circle:before,
+  .js_circle:before {
+    display: none;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  .date {
+    margin-right: 0px;
+  }
+
+  .language,
+  .star,
+  .forks {
+    margin-right: 8px;
+  }
+
+  .language {
+    padding-left: 0;
+    width: 62px;
+  }
+
+  .html_circle:before,
+  .css_circle:before,
+  .js_circle:before {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .date {
+    margin-right: 0px;
+  }
+
+  .language,
+  .star,
+  .forks {
+    margin-right: 4px;
+  }
+
+  .language {
+    padding-left: 0;
+    width: 62px;
+  }
+
+  .html_circle:before,
+  .css_circle:before,
+  .js_circle:before {
+    display: none;
+  }
+}

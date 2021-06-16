@@ -1,0 +1,213 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+}
+
+.preloader {
+  background: url(./img/prelaoder.gif);
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.title {
+  font: normal bold 16px/100% 'Roboto';
+  margin: 0 0 72px 0;
+}
+
+.user_card {
+  height: auto;
+  width: inherit;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info_about_user {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bio {
+  color: #999;
+  margin-bottom: 14px;
+  font: normal normal 12px/115% 'Roboto';
+}
+
+.email,
+.phone {
+  color: #999;
+  font: normal normal  12px/100% 'Roboto';
+}
+
+.email {
+  margin-bottom: 9px;
+}
+
+.name {
+  margin: 0 0 12px 0;
+  font: normal bold 28px/100% 'Roboto';
+}
+
+.repo_card {
+  width: inherit;
+  max-height: 400px;
+  min-height: 350px;
+  padding: 50px 32px 30px;
+  box-sizing: border-box;
+}
+
+.repositories {
+  height: 432px;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user_avatar {
+  border-radius: 9px;
+  margin-right: 32px;
+  height: 150px;
+  width: 150px;
+}
+
+.error_wrap {
+  margin: 0 auto;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_image {
+  background: url(./img/error_picture.png) no-repeat;
+  margin-bottom: 24px;
+  height: 164px;
+  width: 267px;
+}
+
+.error_message {
+  margin: 0 0 8px 0; 
+  font: normal normal 18px/21px 'Roboto';
+}
+
+.message_try_again {
+  color: #999;
+  margin: 0 0 20px 0;
+  font: normal normal 14px/16px 'Roboto';
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+
+  .wrap {
+    max-width: 640px;
+    min-width: 360px;
+  }
+
+  .name {
+    font: normal bold 20px/100% 'Roboto';
+  }
+
+  .user_card {
+    max-width: 640px;
+    min-width: 360px;
+  }
+
+  .user_avatar {
+    margin-right: 25px;
+    height: 120px;
+    width: auto;
+  }
+
+  .repo_card {
+    max-width: 640px;
+    min-width: 360px;
+    max-height: 432px;
+    padding: 20px 25px 22px 25px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  
+  .wrap {
+    background-size: 60px;
+    max-width: 390px;
+    min-width: 310px;
+    height: auto;
+    margin: auto;
+  }
+
+  .user_card,
+  .repo_card {
+    max-width: 390px;
+    min-width: 310px;
+  }
+
+  .repo_card {
+    padding: 10px;
+  }
+
+  .name {
+    margin-bottom: 5px;
+    font: normal bold 18px/100% 'Roboto';
+  }
+
+  .user_avatar {
+    margin-right: 10px;
+    height: 100px;
+    width: auto;
+  }
+
+  .bio {
+   margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .wrap {
+    background-size: 60px;
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+
+  .user_card,
+  .repo_card {
+    width: 300px;
+  }
+
+  .repo_card {
+    padding: 10px;
+  }
+
+  .name {
+    margin-bottom: 5px;
+    font: normal bold 18px/100% 'Roboto';
+  }
+
+  .user_avatar {
+    margin-right: 10px;
+    height: 100px;
+    width: auto;
+  }
+
+  .bio {
+   margin-bottom: 5px;
+  }
+}

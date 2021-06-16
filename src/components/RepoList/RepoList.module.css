@@ -1,0 +1,76 @@
+.wrap {
+  padding: 0;
+}
+
+.repo_list {
+  padding: 0;
+  margin: 0;
+}
+
+.repo_name_wrap {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  list-style-type: none;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  height: auto;
+}
+
+.buttons_wrap {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: #356eff;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;
+  background: none;
+  font: normal normal 14px/16px "Roboto";
+  height: 32px;
+  width: 74px;
+  margin-right: 8px;
+  outline: none;
+}
+
+.button:hover {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #356eff;
+  background: #356eff;
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+  .repo_list {
+    padding: 0;
+  }
+
+  .buttons_wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 409px) {
+  .repo_list {
+    padding: 0;
+  }
+
+  .repo_name_wrap {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .repo_list {
+    padding: 0;
+  }
+
+  .repo_name_wrap {
+    padding: 6px;
+  }
+}
